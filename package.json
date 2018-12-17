@@ -1,0 +1,24 @@
+{
+  "name": "castle-ws-rpc-server",
+  "version": "1.0.0",
+  "repository": "https://github.com/YanCastle/castle-ws-rpc-server.git",
+  "author": "CastleMY <490523604@qq.com>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "READMD.md",
+    "yarn.lock"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "castle-router": "^1.0.1",
+    "castle-rpc-server": "^2.0.1",
+    "castle-server": "^1.0.4",
+    "koa-websocket": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.15"
+  }
+}
