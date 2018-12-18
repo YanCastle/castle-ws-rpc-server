@@ -1,9 +1,8 @@
 
-import { RPCServer, ServerError } from '../../castle-rpc-server/dist/index'
+import { RPCServer, ServerError } from 'castle-rpc-server/dist/index'
 import * as WebSocket from 'koa-websocket'
 import { controller, config_route } from 'castle-router'
 import { RPC } from 'castle-rpc';
-import { Buffer } from 'buffer';
 import { config } from 'castle-server/dist/use/config'
 export const ServerConfig = {
     WebSockets: [],
