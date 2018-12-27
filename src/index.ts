@@ -4,12 +4,13 @@ import * as WebSocket from 'koa-websocket'
 import { controller, config_route } from 'castle-router'
 import { RPC } from 'castle-rpc';
 import { config } from 'castle-server/dist/use/config'
+import { install as SessionInstall } from 'castle-session'
 export const ServerConfig = {
     WebSockets: [],
     //WebSocket 处理服务
     WSHanders: {}
 }
-class RPCService extends RPCServer {
+class WSRPCService extends RPCServer {
     constructor() {
         super({})
     }
@@ -47,7 +48,7 @@ class RPCService extends RPCServer {
         return this.clients;
     }
 }
-const rpc = new RPCService()
+export const WSRPCServer = new WSRPCService()
 export function install(that: any, koa: any, conf: any) {
     that._koa = new WebSocket(koa)
     //启用WebSocket服务
@@ -63,11 +64,12 @@ export function install(that: any, koa: any, conf: any) {
             if ('string' == typeof message) {
                 ctx.RPCEncoding = 'text'
             }
-            rpc.message(message, ctx)
+            WSRPCServer.message(message, ctx)
         })
         ctx.websocket.on('close', () => {
-            rpc.close(ctx)
+            WSRPCServer.close(ctx)
         })
         next();
     })
+    SessionInstall(that, that._koa.ws, {})
 }

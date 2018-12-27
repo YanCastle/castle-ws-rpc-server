@@ -15,7 +15,7 @@
   "dependencies": {
     "castle-router": "^1.0.1",
     "castle-rpc-server": "^2.0.1",
-    "castle-server": "^1.0.4",
+    "castle-session": "1.0.*",
     "koa-websocket": "^5.0.1"
   },
   "devDependencies": {

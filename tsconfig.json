@@ -4,7 +4,6 @@
         "target": "es2018",
         "sourceMap": true,
         "outDir": "dist",
-        // "outDir": "D:/Project/layimServer/node_modules/castle-koa/dist",
         "declaration": true,
         "experimentalDecorators": true,
         "removeComments": true,
