@@ -1,5 +1,5 @@
 
-import { RPCServer, ServerError } from 'castle-rpc-server/dist/index'
+import { RPCServer, ServerError, ServerEvent } from 'castle-rpc-server/dist/index'
 import * as WebSocket from 'koa-websocket'
 import { controller, config_route } from 'castle-router'
 import { RPC } from 'castle-rpc';
@@ -30,7 +30,11 @@ class WSRPCService extends RPCServer {
             }
         }
         if (ctx.websocket.readyState == 1)
-            return ctx.websocket.send(content)
+            try {
+                return ctx.websocket.send(content)
+            } catch (error) {
+                this.close(ctx);
+            }
         return null;
     }
     async sendTo(ID, Content, ctx) {
@@ -67,6 +71,7 @@ export function install(that: any, koa: any, conf: any) {
             WSRPCServer.message(message, ctx)
         })
         ctx.websocket.on('close', () => {
+            this.close(ctx);
             WSRPCServer.close(ctx)
         })
         next();
