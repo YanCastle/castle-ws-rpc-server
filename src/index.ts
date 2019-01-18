@@ -71,7 +71,6 @@ export function install(that: any, koa: any, conf: any) {
             WSRPCServer.message(message, ctx)
         })
         ctx.websocket.on('close', () => {
-            this.close(ctx);
             WSRPCServer.close(ctx)
         })
         next();
