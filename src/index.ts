@@ -1,7 +1,7 @@
 
 import { RPCServer, ServerError, ServerEvent } from '@ctsy/rpc-server/dist/index'
 import * as WebSocket from 'koa-websocket'
-import { controller, config_route } from '@ctsy/router'
+import { controller } from '@ctsy/router'
 import { RPC } from '@ctsy/rpc';
 import { config } from '@ctsy/server/dist/use/config'
 import { install as SessionInstall } from '@ctsy/session'
@@ -16,7 +16,7 @@ class WSRPCService extends RPCServer {
     }
     async controller(path, data, rpc, ctx) {
         ctx.path = path.substr(0, 1) == '/' ? path : '/' + path;
-        await config_route(ctx, () => { })
+        // await config_route(ctx, () => { })
         ctx.req.body = data
         let rs: any = await controller(ctx)
         return rs;
