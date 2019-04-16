@@ -2,17 +2,55 @@
 # yarn lockfile v1
 
 
+"@ctsy/router@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@ctsy/router/-/router-1.0.5.tgz#8ca26d445b93529e93feec42fd36590f6cad0b97"
+  integrity sha512-2v43+YTaawIHAQjVytYpVQXiLqKd4nC5zjTux8TjCPqsuJZ7ESh2nTufOxFwTtcW/fKtuVcLXNWthfhndI5Rpw==
+  dependencies:
+    koa-better-http-proxy "^0.2.4"
+    lodash "^4.17.11"
+    mz "^2.7.0"
+
+"@ctsy/rpc-server@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc-server/-/rpc-server-2.0.4.tgz#20318b1594725033b33c5dc5dd8d4d2e7f618ebd"
+  integrity sha512-jC/bdj4M5VZRvDJpViUO3eWxDaEF5qTA64uDB+mVGdY/+pcVmlgXc3U+U17CmgsmhelJMWDUi9KJ29MUabTJdA==
+  dependencies:
+    "@ctsy/rpc" "^1.0.4"
+    castle-covert "^1.0.2"
+    eventemitter3 "^3.1.0"
+
+"@ctsy/rpc@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc/-/rpc-1.0.4.tgz#338c8de59b99032a31e8415361ff0ee1e50a3df3"
+  integrity sha512-+fMoG9vidNfXn+O5hxt9wZAqjSTRh+KqdOZzjoJQ9yfUDztLcWgQGvXLvEwwVvoF+pRoDhXlUd1CkV39aFD0Nw==
+  dependencies:
+    buffer "^5.2.1"
+
+"@ctsy/server@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@ctsy/server/-/server-1.0.3.tgz#37b1240057a2e6fce17cea4ea0ad20c3e66f6868"
+  integrity sha512-a1ex008VJO8/w/SruZcbwgYSOtACFHWLso/5N9u0BmGgtrGii16ycC2fHudnmGMNapiGAdAzewkGPWcoPQ1XYQ==
+  dependencies:
+    chokidar "^2.0.4"
+    debug "^4.1.1"
+    koa "^2.6.2"
+    koa-bodyparser "^4.2.1"
+    koa2-multiparty "^1.0.1"
+    mz "^2.7.0"
+
+"@ctsy/session@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ctsy/session/-/session-1.0.4.tgz#6bf86bb03a569cbbbcd2d8246ccb7dca16edad13"
+  integrity sha512-HNPROvV1n77XhXv3oIAQrCgA18M+6cOL17Ext0DjzAW5ebU6XBxdZymP5I1DwurIre8Zub6Fn257p482ZwBUnQ==
+  dependencies:
+    castle-config "^1.0.6"
+    mz "^2.7.0"
+
 "@types/geojson@^1.0.0":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-1.0.6.tgz#3e02972728c69248c2af08d60a48cbb8680fffdf"
   integrity sha512-Xqg/lIZMrUd0VRmSRbCAewtwGZiAk3mEUDvV4op1tGl+LvyPcb/MIOSxTl9z+9+J+R4/vpjiCAT4xeKzH9ji1w==
-
-"@types/mz@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@types/mz/-/mz-0.0.32.tgz#e8248b4e41424c052edc1725dd33650c313a3659"
-  integrity sha512-cy3yebKhrHuOcrJGkfwNHhpTXQLgmXSv1BX+4p32j+VUQ6aP2eJ5cL7OvGcAQx75fCTFaAIIAKewvqL+iwSd4g==
-  dependencies:
-    "@types/node" "*"
 
 "@types/node@*", "@types/node@^10.12.15":
   version "10.12.15"
@@ -175,7 +213,7 @@ braces@^2.3.0, braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-buffer@^5.2.0:
+buffer@^5.2.0, buffer@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.2.1.tgz#dd57fa0f109ac59c602479044dca7b8b3d0b71d6"
   integrity sha512-c+Ko0loDaFfuPWiL02ls9Xd3GO3cPVmUobQ6t3rXNUk304u6hGq+8N/kFi+QEIKhzK3uwolVhLzszmfLmMLnqg==
@@ -268,19 +306,7 @@ castle-rpc@^2.0.0:
   dependencies:
     buffer "^5.2.0"
 
-castle-server@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/castle-server/-/castle-server-1.0.5.tgz#79f0930660b334c3572628aa1fc2adb0f60b77f6"
-  integrity sha512-YGa5QIDPJmlHyDEpNfXG3fOn7Qmpx65I2HuwIgLbM9huAhWsjNCegMN701M1PsNPySSOP48lO7K/7s8COkVgRA==
-  dependencies:
-    "@types/mz" "^0.0.32"
-    chokidar "^2.0.4"
-    koa "^2.6.2"
-    koa-bodyparser "^4.2.1"
-    koa2-multiparty "^1.0.1"
-    mz "^2.7.0"
-
-castle-session@^1.0.4:
+castle-session@1.0.*:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/castle-session/-/castle-session-1.0.4.tgz#958114c784cb812107c45177a50d5a2c2329ad2c"
   integrity sha512-e28aKQXHV3PTy9AZt+ryCKaCHNFVtqtybZ+23nZSSs1vR3KRKornmvcvqvAbjXvZjrsA2AEURwHG8gWui1+4uw==
@@ -433,6 +459,13 @@ debug@^3.1.0:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
+  dependencies:
+    ms "^2.1.1"
+
+debug@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   dependencies:
     ms "^2.1.1"
 

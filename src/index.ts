@@ -1,10 +1,10 @@
 
-import { RPCServer, ServerError, ServerEvent } from 'castle-rpc-server/dist/index'
+import { RPCServer, ServerError, ServerEvent } from '@ctsy/rpc-server/dist/index'
 import * as WebSocket from 'koa-websocket'
-import { controller, config_route } from 'castle-router'
-import { RPC } from 'castle-rpc';
-import { config } from 'castle-server/dist/use/config'
-import { install as SessionInstall } from 'castle-session'
+import { controller, config_route } from '@ctsy/router'
+import { RPC } from '@ctsy/rpc';
+import { config } from '@ctsy/server/dist/use/config'
+import { install as SessionInstall } from '@ctsy/session'
 export const ServerConfig = {
     WebSockets: [],
     //WebSocket 处理服务

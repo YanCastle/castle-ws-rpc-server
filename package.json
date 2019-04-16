@@ -1,5 +1,5 @@
 {
-  "name": "castle-ws-rpc-server",
+  "name": "@ctsy/ws-rpc-server",
   "version": "1.0.5",
   "repository": "https://github.com/YanCastle/castle-ws-rpc-server.git",
   "author": "CastleMY <490523604@qq.com>",
@@ -13,9 +13,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "castle-router": "^1.0.1",
-    "castle-rpc-server": "^2.0.1",
-    "castle-session": "1.0.*",
+    "@ctsy/router": "^1.0.5",
+    "@ctsy/rpc": "^1.0.4",
+    "@ctsy/rpc-server": "^2.0.4",
+    "@ctsy/server": "^1.0.3",
+    "@ctsy/session": "^1.0.4",
     "koa-websocket": "^5.0.1"
   },
   "devDependencies": {
