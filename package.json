@@ -1,6 +1,6 @@
 {
   "name": "@ctsy/ws-rpc-server",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "repository": "https://github.com/YanCastle/castle-ws-rpc-server.git",
   "author": "CastleMY <490523604@qq.com>",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
   "dependencies": {
     "@ctsy/router": "^1.0.5",
     "@ctsy/rpc": "^1.0.5",
-    "@ctsy/rpc-server": "^2.0.4",
+    "@ctsy/rpc-server": "^2.0.6",
     "@ctsy/server": "^1.0.3",
     "@ctsy/session": "^1.0.4",
     "koa-websocket": "^5.0.1"
