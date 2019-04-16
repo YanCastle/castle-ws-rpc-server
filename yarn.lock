@@ -11,16 +11,16 @@
     lodash "^4.17.11"
     mz "^2.7.0"
 
-"@ctsy/rpc-server@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@ctsy/rpc-server/-/rpc-server-2.0.4.tgz#20318b1594725033b33c5dc5dd8d4d2e7f618ebd"
-  integrity sha512-jC/bdj4M5VZRvDJpViUO3eWxDaEF5qTA64uDB+mVGdY/+pcVmlgXc3U+U17CmgsmhelJMWDUi9KJ29MUabTJdA==
+"@ctsy/rpc-server@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc-server/-/rpc-server-2.0.6.tgz#fe071ab3f446e2c68674581e943c5d53d53e3685"
+  integrity sha512-2U9fGcS2hoRJYMHai3UxzDudxh5F2fIxr53L366bbb+88DuoC16cVeeVqLQmmoHi9+LzX0S6raGu9+pm37otBQ==
   dependencies:
     "@ctsy/rpc" "^1.0.4"
     castle-covert "^1.0.2"
     eventemitter3 "^3.1.0"
 
-"@ctsy/rpc@^1.0.4":
+"@ctsy/rpc@^1.0.4", "@ctsy/rpc@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@ctsy/rpc/-/rpc-1.0.5.tgz#9e83cea90532945d7d45fbf2427d54e267f24bd5"
   integrity sha512-UPUfpe/2J4uz0tKH1U1DyXeCG5lthuX/owCeVGvbNLyZGer2eX1AIxxFBnwaAmB/QKHvj2UqWftZC/q64m2RKA==
