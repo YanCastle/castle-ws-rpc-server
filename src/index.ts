@@ -68,7 +68,8 @@ export function install(that: any, koa: any, conf: any) {
             if ('string' == typeof message) {
                 ctx.RPCEncoding = 'text'
             }
-            WSRPCServer.message(message, ctx)
+            if (message.length > 0)
+                WSRPCServer.message(message, ctx)
         })
         ctx.websocket.on('close', () => {
             WSRPCServer.close(ctx)

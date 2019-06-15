@@ -13,11 +13,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@ctsy/router": "^1.0.5",
-    "@ctsy/rpc": "^1.0.5",
-    "@ctsy/rpc-server": "^2.0.6",
-    "@ctsy/server": "^1.0.3",
-    "@ctsy/session": "^1.0.4",
+    "@ctsy/router": "^1.0.12",
+    "@ctsy/rpc": "^1.0.10",
+    "@ctsy/rpc-server": "^2.0.12",
+    "@ctsy/server": "^1.0.5",
+    "@ctsy/session": "^1.0.5",
     "koa-websocket": "^5.0.1"
   },
   "devDependencies": {
